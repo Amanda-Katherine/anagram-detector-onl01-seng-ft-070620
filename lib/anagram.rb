@@ -1,5 +1,3 @@
-# Your code goes here!
-
 class Anagram
     attr_accessor :word
 
@@ -8,12 +6,11 @@ class Anagram
     end
 
     def match(string)
-        matching_cases = []
+       # matching_cases = []
         string.find_all do |array_word|
-            if word.split("").sort == array_word.split("").sort
-                matching_cases << array_word
-            end
+            word.split("").sort == array_word.split("").sort
+              #  matching_cases << array_word
         end
-        matching_cases
+        #matching_cases
     end
 end
